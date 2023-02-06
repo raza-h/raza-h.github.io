@@ -1,13 +1,176 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face
+{
+  font-family: squadaone;
+  src: url('./assets/fonts/rowdies.ttf');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.bg
+{
+  height: 100vh;
+  background-color: #C1C7BD;
+  /*background-position: 75% 25%;*/
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+html, body
+{
+  height: 100%;
+}
+
+body
+{
+  margin: 0;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar
+{
+  width: 10px;
+}
+
+::-webkit-scrollbar-track
+{
+  background: #5a5959;
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: #cac7bd;
+}
+
+.navbar-items
+{
+  animation: height-anim 500ms linear;
+}
+
+.navbar-hide
+{
+  animation: height-anim-rev 500ms linear;
+}
+
+.rotate-cross
+{
+  animation: rt90 500ms linear;
+}
+
+.rotate-ham
+{
+  animation: rt180 500ms linear;
+}
+
+.change-opacity
+{
+  animation: opacityChanger 10ms linear;
+}
+
+.change-color
+{
+  animation: colorChange 2000ms ease infinite;
+}
+
+@keyframes height-anim
+{
+  0%
+  {
+    height: 0;
+  }
+
+  100%{
+    height: 40vh;
+  }
+}
+
+@keyframes height-anim-rev
+{
+  0%
+  {
+    height: 40vh;
+  }
+
+  100%{
+    height: 0;
+  }
+}
+
+@keyframes rt90
+{
+  from
+  {
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(-90deg);
+  }
+}
+
+@keyframes rt180
+{
+  from
+  {
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes opacityChanger
+{
+  0%
+  {
+    display: none;
+    opacity: 0;
+  }
+  25%
+  {
+    display: none;
+    opacity: 0;
+  }
+  50%
+  {
+    display: none;
+    opacity: 0;
+  }
+  75%
+  {
+    display: none;
+    opacity: 0;
+  }
+
+  83%
+  {
+    display: none;
+    opacity: 0%;
+  }
+  
+  100%
+  {
+    display: block;
+    opacity: 100%;
+  }
+}
+
+@keyframes colorChange
+{
+  0%
+  {
+    background-color: #5a5959
+  }
+
+  50%
+  {
+    background-color: #5a5959cc;
+  }
+
+  100%
+  {
+    background-color: #5a5959;
+  }
 }
