@@ -1,28 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.024d6038.css",
-    "main.js": "/static/js/main.387b94f6.js",
-    "static/media/contact2.png": "/static/media/contact2.80e598d8df0c0a94d580.png",
-    "static/media/transcript.PNG": "/static/media/transcript.7c124fb86ee176bb1c1a.PNG",
-    "static/media/resume.pdf": "/static/media/resume.c80da9b555cf1199f644.pdf",
-    "static/media/contact4.png": "/static/media/contact4.99d44b559ebd7a7d406f.png",
-    "static/media/contact1.png": "/static/media/contact1.45403bbe97c75d160afc.png",
-    "static/media/contact-bg.svg": "/static/media/contact-bg.10cdb6f5d32a5277177e.svg",
-    "static/media/skill.svg": "/static/media/skill.b39da52ccbe521471c3c.svg",
-    "static/media/lefthome.svg": "/static/media/lefthome.22f02551a0f6a82d3f97.svg",
-    "static/media/righthome.svg": "/static/media/righthome.8dca08748586a64d71cb.svg",
-    "static/media/stacked-peaks-haikei.svg": "/static/media/stacked-peaks-haikei.6f6b0eb784d8be4a2b35.svg",
-    "static/media/smallnav.svg": "/static/media/smallnav.066649bea80e0b15ccc9.svg",
-    "static/media/blurry-gradient-haikei-sm.svg": "/static/media/blurry-gradient-haikei-sm.259c54cdaf1770ffd742.svg",
+    "main.css": "/static/css/main.7b43216e.css",
+    "main.js": "/static/js/main.d4ffca82.js",
+    "static/js/787.8d4efb73.chunk.js": "/static/js/787.8d4efb73.chunk.js",
+    "static/media/rowdies.ttf": "/static/media/rowdies.c3e51820d6d0195a2ef9.ttf",
+    "static/media/resume.pdf": "/static/media/resume.669be9f91bc79628f218.pdf",
+    "static/media/webpage.svg": "/static/media/webpage.1c3c19c6808525258cadaaa3b3f2132d.svg",
+    "static/media/github.svg": "/static/media/github.136f4cb0ffc5a6a231fa554ca798bf39.svg",
+    "static/media/download.svg": "/static/media/download.d5c04691349c65a52def4c0c2290272c.svg",
+    "static/media/hamburger-menu.svg": "/static/media/hamburger-menu.0031e312f5bc6c644a47c494ca68c67e.svg",
+    "static/media/dev.svg": "/static/media/dev.7d6cb73b613a72a445fd4b94883215de.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.9e58638fd2eebbc0b7aa0bbd769c136c.svg",
+    "static/media/down-icon.svg": "/static/media/down-icon.413ae605d1c8c018173025b6aa1b7623.svg",
+    "static/media/cross.svg": "/static/media/cross.5712d46a5f1e2c4d34f4bebd401ad33e.svg",
     "index.html": "/index.html",
-    "static/media/blurry-gradient-haikei.svg": "/static/media/blurry-gradient-haikei.ff2452635b06e8f0083e.svg",
-    "static/media/longwavy.svg": "/static/media/longwavy.c3143e53524e7c85afb6.svg",
-    "static/media/nav.svg": "/static/media/nav.e453b49eda63d46f54dd.svg",
-    "main.024d6038.css.map": "/static/css/main.024d6038.css.map",
-    "main.387b94f6.js.map": "/static/js/main.387b94f6.js.map"
+    "main.7b43216e.css.map": "/static/css/main.7b43216e.css.map",
+    "main.d4ffca82.js.map": "/static/js/main.d4ffca82.js.map",
+    "787.8d4efb73.chunk.js.map": "/static/js/787.8d4efb73.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.024d6038.css",
-    "static/js/main.387b94f6.js"
+    "static/css/main.7b43216e.css",
+    "static/js/main.d4ffca82.js"
   ]
 }
