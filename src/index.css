@@ -22,6 +22,7 @@
 html, body
 {
   height: 100%;
+  scroll-behavior:smooth;
 }
 
 body
@@ -42,7 +43,7 @@ body
 
 ::-webkit-scrollbar-thumb
 {
-  background: #cac7bd;
+  background: #c1c7bd;
 }
 
 .navbar-items
@@ -63,6 +64,49 @@ body
 .rotate-ham
 {
   animation: rt180 500ms linear;
+}
+
+a, button
+{
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media only screen and (min-width: 768px)
+{
+  .nav-item
+  {
+    display: inline-block;
+    position: relative;
+  }
+
+  .nav-item:after
+  {
+    content: ' ';
+    display: block;
+    margin: auto;
+    margin-top:3px;
+    height: 2px;
+    width: 0;
+    background: transparent;
+    transition: width 500ms ease, background-color 500ms ease;
+  }
+
+  .nav-item-clicked:after
+  {
+    content: ' ';
+    display: block;
+    margin: auto;
+    margin-top:3px;
+    height: 2px;
+    width: 100%;
+    background: #c1c7bd;
+  }
+
+  .nav-item:hover:after
+  {
+    width: 100%;
+    background: #c1c7bd;
+  }
 }
 
 .change-opacity
