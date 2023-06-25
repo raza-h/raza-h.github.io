@@ -11,15 +11,15 @@ export default function Collector(props) {
   const [display, setDisplay] = useState('block');
 
   return (
-    <div id = "next" className = "bg-[#5a5959] h-[100vh] flex flex-col justify-between">
+    <div id = "next" className = "bg-[#5a5959] min-h-screen flex flex-col justify-between">
       <Navbar setDisplayBody = {setDisplay} />
-      <div className = {`${display} mt-5 py-10 bg-[#5a5959]`}>
+      <main className = {`${display} mt-5 py-10 bg-[#5a5959]`}>
         <Routes>
           <Route index element = {<About />} />
           <Route element = {<Projects projects = {props.projects} setProjects = {props.setProjects}/>} path = "projects"/>     
           <Route element = {<Contact />} path = "contact" />   
           </Routes>
-      </div>
+      </main>
       <Footer />
     </div>
   )
