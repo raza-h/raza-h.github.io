@@ -2,8 +2,8 @@ import React from 'react'
 
 const Experience = () => {
   return (
-    <section className='text-[#c1c7bd] p-5'>
-      <article className='p-5 border space-y-2 border-[#c1c7bd] rounded-md'>
+    <section className='text-[#c1c7bd] p-2 md:p-5'>
+      <article className='p-2.5 md:p-5 border space-y-2 border-[#c1c7bd] rounded-md'>
         <small className='text-sm float-right'>July 2023 - August 2023</small>
         <h1 className='text-xl'>ABSOL - Absolute Solutions</h1>
         <h2>.NET Intern</h2>
