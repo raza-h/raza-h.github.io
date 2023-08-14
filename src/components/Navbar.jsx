@@ -11,14 +11,17 @@ export default function Navbar(props) {
   const [anim, setAnim] = useState('');
   const [about, setAbout] = useState('');
   const [projects, setProjects] = useState('');
+  const [experience, setExp] = useState('');
   const [contact, setContact] = useState('text-[#c1c7bd]');
   const location = useLocation();
 
   useEffect(() =>
   {
-    location.pathname === "/" ? setAbout('bg-[#c1c7bd] text-[#5a5959] md:text-[#c1c7bd] md:bg-[#5a5959] nav-item-clicked') : setAbout('');
-    location.pathname === "/projects" ? setProjects('bg-[#c1c7bd] text-[#5a5959] md:text-[#c1c7bd] md:bg-[#5a5959] nav-item-clicked') : setProjects('');
-    location.pathname === "/contact" ? setContact('bg-[#c1c7bd] text-[#5a5959] md:text-[#c1c7bd] md:bg-[#5a5959]') : setContact('text-[#c1c7bd]');
+    const { pathname } = location;
+    pathname === "/" ? setAbout('bg-[#c1c7bd] text-[#5a5959] md:text-[#c1c7bd] md:bg-[#5a5959] nav-item-clicked') : setAbout('');
+    pathname === "/projects" ? setProjects('bg-[#c1c7bd] text-[#5a5959] md:text-[#c1c7bd] md:bg-[#5a5959] nav-item-clicked') : setProjects('');
+    pathname === "/experience" ? setExp('bg-[#c1c7bd] text-[#5a5959] md:text-[#c1c7bd] md:bg-[#5a5959] nav-item-clicked') : setExp('');
+    pathname === "/contact" ? setContact('bg-[#c1c7bd] text-[#5a5959] md:text-[#c1c7bd] md:bg-[#5a5959]') : setContact('text-[#c1c7bd]');
   },[location]);
 
   const toggleHam = async() =>
@@ -52,10 +55,11 @@ export default function Navbar(props) {
           <a onClick={()=> {anim ? toggleHam() : setAnim('')}} href = {resume} download><button className = "pr-2 pt-5 md:py-[0.3rem] text-[#cac7bd] md:border-2 md:border-[#cac7bd] rounded-sm hover:bg-[#c1c7bd10] transition-all"><img alt ="download" src = {downloadIcon} width = "30rem" className='inline pr-[0.4rem] md:px-[0.4rem]'/><span>Resume</span></button></a>
         </div>
         <nav>
-          <ul className='list-none md:flex text-[#c1c7bd] md:space-x-10 space-y-5 md:space-y-0 my-5 py-2 md:py-0 md:my-3'>
+          <ul className='list-none md:flex text-[#cac7bd] md:space-x-10 space-y-5 md:space-y-0 my-5 py-2 md:py-0 md:my-3'>
             <li className = "nav-item px-2 py-1 md:py-0" onClick={()=> {window.innerWidth < 768 ? toggleHam() : setAnim('')}} ><a href = "#home"><p>Home</p></a></li>
             <li className = {`${about} nav-item md:px-1 px-2 py-1 md:py-0`}  onClick={()=> {window.innerWidth < 768 ? toggleHam() : setAnim('')}} ><Link to="/"><p>About</p></Link></li>
             <li className = {`${projects} nav-item md:px-1 px-2 py-1 md:py-0`} onClick={()=> {window.innerWidth < 768 ? toggleHam() : setAnim('')}} ><Link to = "/projects"><p>Projects</p></Link></li>
+            <li className = {`${experience} nav-item md:px-1 px-2 py-1 md:py-0`} onClick={()=> {window.innerWidth < 768 ? toggleHam() : setAnim('')}} ><Link to = "/experience"><p>Experience</p></Link></li>
           </ul>
         </nav>
         <div className = {`px-2 py-1 md:py-0 ${contact}`}>

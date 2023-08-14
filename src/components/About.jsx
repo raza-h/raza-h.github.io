@@ -10,7 +10,10 @@ export default function About() {
         </figure>
         <article className = "md:bg-[#cac7bd] lg:text-xl px-5 py-4 text-justify lg:pb-10 rounded-sm xl:px-8">
             <h2 className = "hidden md:block md:text-xl lg:text-3xl py-4 lg:pb-7 xl:pb-10">About Me</h2>
-            <p className = "pb-5">A college senior at National University of Computer and Emerging Sciences, Lahore, and a self-taught web developer. I specialize in Frontend development with React and Tailwind CSS. Furthermore, I am well-versed in MERN Stack.</p>
+            <p className = "pb-5">A college senior at National University of Computer and Emerging Sciences, Lahore, and a self-taught web developer. 
+              I specialize in Frontend web development with React.js. Furthermore, I am well-versed in MERN Stack. Along with my internship,
+              I am currently exploring React Native to scale my past skills and experience to mobile applications.
+            </p>
         </article>
     </section>
   )

@@ -6,6 +6,7 @@ import { useState } from 'react'
 import Projects from './Projects'
 import { Routes, Route } from 'react-router-dom'
 import Contact from './Contact'
+import Experience from './Experience'
 
 export default function Collector(props) {
   const [display, setDisplay] = useState('block');
@@ -18,7 +19,8 @@ export default function Collector(props) {
           <Route index element = {<About />} />
           <Route element = {<Projects projects = {props.projects} setProjects = {props.setProjects}/>} path = "projects"/>     
           <Route element = {<Contact />} path = "contact" />   
-          </Routes>
+          <Route element = {<Experience />} path = "experience" />   
+        </Routes>
       </main>
       <Footer />
     </div>

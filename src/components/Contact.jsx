@@ -24,8 +24,7 @@ export default function Contact() {
     setOccupation('');
     setMessage('');
     toast.info('Sending...');
-    await setMessage(email + "\nFrom "+ occupation + "\n - " + message);
-    await emailjs.send('service_voaqzzv', "template_ny503j8", {message, from_name: name, reply_to: email},'HSd1g95KiiGGBoaAJ');
+    await emailjs.send('service_voaqzzv', "template_ny503j8", {message: email + "\nFrom "+ occupation + "\n - " + message, from_name: name, reply_to: email},'HSd1g95KiiGGBoaAJ');
     toast.success('Sent Successfully!');
   }
 
