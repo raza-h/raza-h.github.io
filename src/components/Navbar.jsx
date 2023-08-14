@@ -29,7 +29,7 @@ export default function Navbar(props) {
     if (hamOpen === 'h-0' || hamOpen === 'h-0 navbar-hide')
     {
       props.setDisplayBody('hidden opacity-0');
-      setHam('navbar-items h-[40vh]');
+      setHam('navbar-items h-[50vh]');
       setIcon(cross);
       setAnim('rotate-cross');
     }
@@ -63,7 +63,7 @@ export default function Navbar(props) {
           </ul>
         </nav>
         <div className = {`px-2 py-1 md:py-0 ${contact}`}>
-          <Link to = "contact"><button onClick={()=> {anim ? toggleHam() : setAnim('')}} className = "md:px-2 rounded-sm md:my-[1px] md:py-[0.3rem] md:border-2 border-[#cac7bd] hover:bg-[#c1c7bd10] transition-all">Get in touch</button></Link>
+          <Link to = "contact"><button onClick={()=> {anim ? toggleHam() : setAnim('')}} className = "md:px-2 rounded-sm md:my-[1px] md:py-[0.3rem] md:border-2 border-[#cac7bd] md:hover:bg-[#c1c7bd10] transition-all">Get in touch</button></Link>
         </div>
       </header>
     </div>
