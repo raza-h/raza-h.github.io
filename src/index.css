@@ -11,7 +11,7 @@
 .bg
 {
   height: 100vh;
-  background-color: #C1C7BD;
+  background-color: #CAC7BD;
   /*background-position: 75% 25%;*/
   background-position: center;
   background-attachment: fixed;
@@ -38,12 +38,12 @@ body
 
 ::-webkit-scrollbar-track
 {
-  background: #5a5959;
+  background: #cac7bd;
 }
 
 ::-webkit-scrollbar-thumb
 {
-  background: #c1c7bd;
+  background: #5a5959;
 }
 
 .navbar-items
