@@ -218,3 +218,15 @@ a, button
     background-color: #5a5959;
   }
 }
+
+.expand-reduce
+{
+  animation: expand-reduce 1s linear infinite;
+}
+
+@keyframes expand-reduce
+{
+  0% {transform: translateY(0px)}
+  50% {transform: translateY(5px)}
+  100% {transform: translateY(0px)}
+}
