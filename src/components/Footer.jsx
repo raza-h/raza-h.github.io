@@ -10,7 +10,7 @@ export default function Footer() {
         <a target = "_blank" rel = "noreferrer" href = "https://linkedin.com/in/razah1214"><img alt = "linkedin" src = {linkedin} width = "30rem"/></a>
       </div>
       <a href="#top" className='w-[50%]'>
-        <figure className='flex space-x-1 w-fit mx-auto'>
+        <figure className='flex space-x-1 w-fit mx-auto hover:translate-y-[-2px] transition-all'>
           <img alt = "top" src = {downIcon} width="20rem" className='transform rotate-180' />
           <figcaption>Back To Top</figcaption>
         </figure>

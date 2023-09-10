@@ -10,7 +10,7 @@ import spring from '../assets/images/spring.svg'
 import { Link } from 'react-router-dom'
 import LinkHeader from './subcomponents/LinkHeader'
 
-export default function Home() {
+export default function Home({ setVisible }) {
   let scrollDown = () =>
   {
     let scrollHeight = document.getElementById("next").offsetTop;
@@ -19,7 +19,7 @@ export default function Home() {
 
   return (
     <>
-      <LinkHeader />
+      <LinkHeader setVisible={setVisible} />
       <hr className='border-[#5a5959]'/>
       <main id = "home" className = "bg text-[#5a5959] py-10 px-5 lg:flex lg:flex-col lg:justify-around">
         <figure className = "mx-auto w-fit md:space-y-10 lg:grid lg:grid-cols-2 lg:justify-between lg:gap-x-20">
