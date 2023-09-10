@@ -27,12 +27,12 @@ export default function Home() {
             <h1 className='flex items-center space-x-4 text-2xl sm:text-3xl py-2 md:text-3xl lg:text-2xl xl:text-4xl'>
               <p>Raza Haider</p>
               <section className = "hidden sm:flex space-x-2.5 items-center py-2">
-                <img src = { react } width = "25rem"/>
-                <img src = { tailwind } width = "25rem"/>
-                <img src = { typescript } width = "25rem"/>
-                <img src = { node } width = "25rem"/>
-                <img src = { dotnet } width = "32rem"/>
-                <img src = { spring } width = "23rem"/>
+                <img src = { react } alt={'react-icon'} width = "25rem"/>
+                <img src = { tailwind } alt={'tailwind-icon'} width = "25rem"/>
+                <img src = { typescript } alt={'typescript-icon'} width = "25rem"/>
+                <img src = { node } alt={'node-icon'} width = "25rem"/>
+                <img src = { dotnet } alt={'dotnet-icon'} width = "32rem"/>
+                <img src = { spring } alt={'spring-boot-icon'} width = "23rem"/>
               </section>
             </h1>
             <h2 className='text-4xl sm:text-6xl md:text-7xl lg:text-5xl xl:text-7xl'>Web Developer</h2>
